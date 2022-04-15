@@ -1,18 +1,19 @@
 import React from "react";
-
 import {
-    Accordion,
     AccordionItem,
     AccordionButton,
     AccordionPanel,
     AccordionIcon,
   } from '@chakra-ui/react'
   import { Box } from '@chakra-ui/react'
-  import List from './Lists'
 
-export default function Lists(props) {
-    return (
-        <div>
+  
+  export default function Lists(props) {
+      const style = {
+          display: "block"
+      }
+      return (
+        <div className="list">
             <AccordionItem>
                 <h2>
                     <AccordionButton>
@@ -23,10 +24,10 @@ export default function Lists(props) {
                     </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                    <ul>
-                        <li>{props.li_one}</li>
-                        <li>{props.li_two}</li>
-                        <li>{props.li_three}</li>
+                    <ul style={style}>
+                        <li style={style}>{props.li_one}</li>
+                        <li style={style}>{props.li_two}</li>
+                        <li style={style}>{props.li_three}</li>
                     </ul>
                 </AccordionPanel>
             </AccordionItem>

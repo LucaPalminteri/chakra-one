@@ -1,6 +1,5 @@
 import { Button, ButtonGroup } from '@chakra-ui/react'
 import { Stack, HStack, VStack } from '@chakra-ui/react'
-import { Spinner } from '@chakra-ui/react'
 import { FaBeer } from 'react-icons/fa';
 import {FiMail} from 'react-icons/fi'
 import { MdBuild , MdCall } from "react-icons/md"
